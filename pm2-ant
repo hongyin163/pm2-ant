@@ -29,6 +29,7 @@ function isRunning() {
   fi 
   rm $pidfile;
   return 0;
+  
 }
 
 function status() {
