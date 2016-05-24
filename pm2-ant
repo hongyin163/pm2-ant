@@ -48,6 +48,7 @@ function usage () {
   Usage: $(basename $0) <cmd> [options]
 
   Commands:
+    init [HOST] [STATSD_IP:PORT]   config 
     start [config_file]   start the service
     stop                  stop the running service
     restart               restart the service
@@ -65,6 +66,15 @@ EOF
 }
 
 case "$1" in
+  init)
+    if [ 0 -eq $? ];
+      then
+        echo -e "$prefixINFO Initing..."
+        $node $SRC/lib/init "$@"
+        sleep 1;
+    fi
+  
+    ;;
   start)
     isRunning;
     if [ 0 -eq $? ];
