@@ -1,10 +1,6 @@
 {
   "name": "pm2-ant",
-<<<<<<< HEAD
   "version": "0.1.14-beta",
-=======
-  "version": "0.1.12-beta",
->>>>>>> a4bfca8646a07b76fde4f67dea811839b997678a
   "description": "Unitech/PM2 performance monioring using Statsd and Graphite",
   "main": "./pm2-ant.js",
   "scripts": {
